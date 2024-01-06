@@ -1,19 +1,9 @@
-export default function ProductContent() {
+export default function ProductContent({ product, image }) {
   return (
-    <section className="Produtos">
-      <h1>Nossos Produtos</h1>
-      <div className="produto">
-        <h2>Produto 1</h2>
-        <button>Adicionar no carrinho</button>
-      </div>
-      <div className="produto">
-        <h2>Produto 2</h2>
-        <button>Adicionar no carrinho</button>
-      </div>
-      <div className="produto">
-        <h2>Produto 3</h2>
-        <button>Adicionar no carrinho</button>
-      </div>
-    </section>
+    <div className="produto">
+      <h2>{product}</h2>
+      <img src={image} alt={product} />
+      <button>Adicionar ao carrinho</button>
+    </div>
   );
 }

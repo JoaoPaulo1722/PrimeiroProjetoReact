@@ -1,6 +1,8 @@
+import "./style.css";
+
 export default function Header() {
   return (
-    <header>
+    <header className="header">
       <h1>TechSport</h1>
       <nav>
         <ul>
